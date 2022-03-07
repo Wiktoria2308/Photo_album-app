@@ -9,7 +9,7 @@
  /**
  * Validate JWT token
  */
-const validateJwtToken = (req, res, next) => {
+const validateToken = (req, res, next) => {
 	// make sure Authorization header exists, otherwise bail
 	if (!req.headers.authorization) {
 		debug("Authorization header missing");
@@ -44,6 +44,6 @@ const validateJwtToken = (req, res, next) => {
  
  
  module.exports = {
-    validateJwtToken,
+    validateToken,
  }
  
