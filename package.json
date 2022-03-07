@@ -1,0 +1,37 @@
+{
+  "name": "photo_album-app",
+  "version": "1.0.0",
+  "description": "Photo album application using express and mysql",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "cross-env DEBUG=Photo_album:* nodemon ./bin/www",
+    "debug": "cross-env Photo_album:* nodemon --inspect ./bin/www" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wiktoria2308/Photo_album-app.git"
+  },
+  "author": "Wiktoria Dobrzewinska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wiktoria2308/Photo_album-app/issues"
+  },
+  "homepage": "https://github.com/Wiktoria2308/Photo_album-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bookshelf": "^1.2.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  }
+}

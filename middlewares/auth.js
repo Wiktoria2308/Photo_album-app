@@ -39,8 +39,6 @@ const validateJwtToken = (req, res, next) => {
 			data: 'Authorization failed',
 		});
 	}
-
-	// pass request along
 	next();
 }
  
