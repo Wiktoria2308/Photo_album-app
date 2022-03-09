@@ -2,7 +2,6 @@
  * Profile Controller
  */
  const bcrypt = require("bcrypt");
- const debug = require("debug")("books:profile_controller");
  const { matchedData, validationResult } = require("express-validator");
  const models = require('../models');
  /**

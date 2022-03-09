@@ -2,7 +2,6 @@
  * Album Controller
  */
 
-const debug = require('debug')('books:author_controller');
 const { matchedData, validationResult } = require("express-validator");
 const models = require('../models');
 

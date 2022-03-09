@@ -2,7 +2,6 @@
  * Authentication Middleware
  */
 
- const debug = require('debug')('books:auth');
  const jwt = require('jsonwebtoken');
  
  /**
@@ -11,7 +10,6 @@
 const validateToken = (req, res, next) => {
 	// make sure Authorization header exists, otherwise fail
 	if (!req.headers.authorization) {
-		debug("Authorization header missing");
 		return res.status(401).send({
 			status: 'fail',
 			data: 'Authorization failed',
