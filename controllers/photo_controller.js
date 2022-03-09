@@ -9,7 +9,7 @@
  
  /**
  * Get authenticated user's photos
- * 
+ *  GET /photos
  */
  const getPhotos = async (req, res) => {
      try {
@@ -31,6 +31,7 @@
  
  /**
   * Get photo by its given id
+  * GET /photos/:photoId
   */
  const getPhotoById = async (req, res) => {
      try {
@@ -58,7 +59,7 @@
  }
  /**
   * Add a new photo
-  *
+  * POST /photos
   */
  const addNewPhoto = async (req, res) => {
      const errors = validationResult(req);
@@ -86,6 +87,7 @@
  
  /**
   * Update a photo
+  * PUT /photos/:photoId
   */
  const updatePhoto = async (req, res) => {
      const photoID = req.params.photoId;
@@ -122,6 +124,7 @@
  
  /**
   * Remove photo and all its connections to an album
+  * DELETE /photos/:photoId
   */
  const removePhoto = async (req, res) => {
      const photoId = req.params.photoId;

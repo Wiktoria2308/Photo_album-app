@@ -4,7 +4,7 @@
  const bcrypt = require("bcrypt");
  const debug = require("debug")("books:profile_controller");
  const { matchedData, validationResult } = require("express-validator");
- 
+ const models = require('../models');
  /**
   * Get authenticated user's profile
   *
@@ -29,7 +29,7 @@
  /**
   * Update authenticated user's profile
   *
-  * PUT /
+  * PUT /profile
   */
  const updateProfile = async (req, res) => {
    // check for any validation errors
@@ -51,12 +51,15 @@
        throw error;
      }
    }
+  
    try {
-     const updatedUser = await req.user.save(validData);
+    //  const updatedUser = await req.user.save(validData);
+    const updatedUser = await models.User.query({ where: { id: req.user.id }}).fetch({ require: false });
+    updatedUser.save(validData);
      res.send({
        status: "success",
        data: {
-         user: updatedUser,
+         user: validData,
        },
      });
    } catch (error) {

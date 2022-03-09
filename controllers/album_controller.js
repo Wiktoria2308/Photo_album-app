@@ -9,7 +9,7 @@
  /**
  * Get authenticated user's albums
  *
- * GET profile/albums
+ * GET /albums
  */
  const getAlbums = async (req, res) => {
      try {
@@ -33,7 +33,7 @@
  /**
   * Get authenticated user's album by id
   *
-  * GET profile/albums/:albumId
+  * GET albums/:albumId
   */
  const getAlbumById = async (req, res) => {
      try {
@@ -97,7 +97,7 @@
  /**
   * Update an album by ID
   *
-  * PUT /:albumId
+  * PUT albums/:albumId
   */
  const updateAlbum = async (req, res) => {
      const albumID = req.params.albumId;
@@ -136,7 +136,7 @@
   * Add photo to an album
   * Or 
   * add multiply photos to an album
-  *
+  * POST /albums/:albumId/photos
   */
  const addPhotoToAlbum = async (req, res) => {
      const errors = validationResult(req);
@@ -166,6 +166,7 @@
              }
              else {
                  try {
+                    
                      album.photos().attach(photoID);
                      howMany++;
                  } catch (error) {
@@ -222,7 +223,7 @@
  
  /**
   * Remove photo from album
-  *
+  * DELETE albums/:albumId/photos/:photosId
   */
  const removePhotoFromAlbum = async (req, res) => {
      const albumId = req.params.albumId;
@@ -261,7 +262,7 @@
  
  /**
   * Remove album and all its photo connections
-  *
+  * DELETE /albums/:albumId
   */
  const removeAlbum = async (req, res) => {
      const albumId = req.params.albumId;

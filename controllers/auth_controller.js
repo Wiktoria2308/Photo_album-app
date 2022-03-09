@@ -11,9 +11,11 @@
  
  /**
   * Login a user, sign a JWT token and return it
-  *
   * POST /login
-  * 
+  * {
+    "email": "anna1234@gmail.com",
+    "password": "anna1234"
+    }
   */
  const login = async (req, res) => {
      // destructure username and password from request body
@@ -98,8 +100,13 @@
  
  /**
   * Register a new user
-  *
   * POST /register
+  * {
+    "email": "anna1234@gmail.com",
+    "password": "anna1234",
+    "first_name": "Anna",
+    "last_name": "Blomma"
+     }
   */
  const register = async (req, res) => {
      // check for any validation errors

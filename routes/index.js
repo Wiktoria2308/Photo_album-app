@@ -4,6 +4,10 @@ const auth = require('../middlewares/auth');
 const authController = require('../controllers/auth_controller');
 const userValidationRules = require('../validation/user');
 
+router.use('/profile', auth.validateToken, require('./profile'));
+router.use('/albums', auth.validateToken, require('./album'));
+router.use('/photos', auth.validateToken, require('./photo'));
+
 // login a user and get a JWT token
 router.post('/login', authController.login);
 
@@ -11,8 +15,5 @@ router.post('/login', authController.login);
 router.post('/refresh', authController.refresh);
 // register a new user
 router.post('/register', userValidationRules.createRules, authController.register);
-
-// router.use(auth.validateToken);
-router.use('/profile', auth.validateToken, require('./profile'));
 
 module.exports = router;
