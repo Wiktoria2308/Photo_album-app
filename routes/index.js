@@ -4,6 +4,11 @@ const auth = require('../middlewares/auth');
 const authController = require('../controllers/auth_controller');
 const userValidationRules = require('../validation/user');
 
+/* GET / */
+router.get('/', (req, res, next) => {
+	res.send({ success: true, data: { msg: 'Hello, you!' }});
+});
+
 router.use('/profile', auth.validateToken, require('./profile'));
 router.use('/albums', auth.validateToken, require('./album'));
 router.use('/photos', auth.validateToken, require('./photo'));
