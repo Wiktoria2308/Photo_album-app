@@ -1,0 +1,872 @@
+{
+	"info": {
+		"_postman_id": "60d97e99-6d06-4cc5-b3fe-087133431889",
+		"name": "Photo_album JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "profile   Nikola id=2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2ODM1MDUzLCJleHAiOjE2NDY4Mzg2NTN9.-Aq9oQib2T1I35qGSzCzwqnBwP3bLEnqiJxZ8Lkk8HQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile  Wiktoria id=1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyM3dpa2lAZ21haWwuY29tIiwiaWQiOjEsIm5hbWUiOiJXaWt0b3JpYSBEb2JyemV3aW5za2EiLCJpYXQiOjE2NDY2NTUwMTYsImV4cCI6MTY0NjY1ODYxNn0.uEtJCLHCOGQisJWd6ZyW8VMYOgFWOS1vSZytPTXGtcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login Nikola id=2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"nikola@gmail.com\",\n    \"password\": \"nikola1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login Wiktoria id=1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"23wiki@gmail.com\",\n    \"password\":\"haha\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register New User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"anna1234@gmail.com\",\n    \"password\": \"anna1234\",\n    \"first_name\": \"Anna\",\n    \"last_name\": \"Blomma\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login New User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"anna1234@gmail.com\",\n    \"password\": \"anna1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile New User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbm5hMTIzNEBnbWFpbC5jb20iLCJpZCI6MywibmFtZSI6IkFubmEgQmxvbW1hIiwiaWF0IjoxNjQ2NjU1NDM2LCJleHAiOjE2NDY2NTkwMzZ9.KzKXTGJKyOJqSQBy0ToGpk0cnb30dbCkknz-F6FfwLk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh token New User",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbm5hMTIzNEBnbWFpbC5jb20iLCJpZCI6MywibmFtZSI6IkFubmEgQmxvbW1hIiwiaWF0IjoxNjQ2NjU1NDM2LCJleHAiOjE2NDY2Njk4MzZ9.bRDlsz4OrsfNXPUyM6zVJv6A_Sch0-PBqMNM_evSTYc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/refresh",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Photos",
+			"item": [
+				{
+					"name": "/photos Wiktoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyM3dpa2lAZ21haWwuY29tIiwiaWQiOjEsIm5hbWUiOiJXaWt0b3JpYSBEb2JyemV3aW5za2EiLCJpYXQiOjE2NDY2NTUwMTYsImV4cCI6MTY0NjY1ODYxNn0.uEtJCLHCOGQisJWd6ZyW8VMYOgFWOS1vSZytPTXGtcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/photos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/photos Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2ODM1MDUzLCJleHAiOjE2NDY4Mzg2NTN9.-Aq9oQib2T1I35qGSzCzwqnBwP3bLEnqiJxZ8Lkk8HQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/photos  Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2NzMxMjQzLCJleHAiOjE2NDY3MzQ4NDN9.t1V3bhQoEEteQTS3_fvLaoYCINoOAldKaQPAIqT4nlc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"North Pole\",\n    \"url\": \"https://swoop-arctic.imgix.net/SW_3_Loli-Figueroa_ALL_North-Pole-e.jpg?auto=format,enhance,compress&fit=crop&crop=entropy,faces,focalpoint&w=580&h=480&q=40\",\n    \"comment\": \"Somewhere far north\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/photos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/photos  Wiktoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2NjU1OTQ5LCJleHAiOjE2NDY2NTk1NDl9.qx6kvx5QknDH0qndoSlrlfytGupm_6o9XSk97Llw6KM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"North Pole\",\n    \"url\": \"https://swoop-arctic.imgix.net/SW_3_Loli-Figueroa_ALL_North-Pole-e.jpg?auto=format,enhance,compress&fit=crop&crop=entropy,faces,focalpoint&w=580&h=480&q=40\",\n    \"comment\": \"Somewhere far north\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/photos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "photos/1 Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2NjU1OTQ5LCJleHAiOjE2NDY2NTk1NDl9.qx6kvx5QknDH0qndoSlrlfytGupm_6o9XSk97Llw6KM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Malmo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/photos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/photos/1 Wiktoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2NjU1OTQ5LCJleHAiOjE2NDY2NTk1NDl9.qx6kvx5QknDH0qndoSlrlfytGupm_6o9XSk97Llw6KM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Malmo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/photos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/photos/1 Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2ODI3OTgxLCJleHAiOjE2NDY4MzE1ODF9.dMP8K9kDqL7yQAnu0I5XqP6I5Yf4ICzrHH0CONHN0Z8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/photos/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"photos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/photos/21 Wiktoria id=1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyM3dpa2lAZ21haWwuY29tIiwiaWQiOjEsIm5hbWUiOiJXaWt0b3JpYSBEb2JyemV3aW5za2EiLCJpYXQiOjE2NDY2NTc2MTgsImV4cCI6MTY0NjY2MTIxOH0.85LtsDFhsIyYKXLkXDTbpwrLqQPqEHc0MX567gecg4k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/photos/21",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"photos",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Albums",
+			"item": [
+				{
+					"name": "/albums Nikola",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "nikola1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "nikola@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/albums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums  Wiktoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyM3dpa2lAZ21haWwuY29tIiwiaWQiOjEsIm5hbWUiOiJXaWt0b3JpYSBEb2JyemV3aW5za2EiLCJpYXQiOjE2NDY2NTY0NDksImV4cCI6MTY0NjY2MDA0OX0.KiHKtNnFDNZiWw1kyi9HHxJOL4sVEC0s-HaL8q4qzEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/albums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums  Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyM3dpa2lAZ21haWwuY29tIiwiaWQiOjEsIm5hbWUiOiJXaWt0b3JpYSBEb2JyemV3aW5za2EiLCJpYXQiOjE2NDY2NTcwODMsImV4cCI6MTY0NjY2MDY4M30.Q391yvtUQys82546hbmFwoIthPa0IC6d_flwD8lOlxY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Summer 2019\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/albums",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums  Wiktoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyM3dpa2lAZ21haWwuY29tIiwiaWQiOjEsIm5hbWUiOiJXaWt0b3JpYSBEb2JyemV3aW5za2EiLCJpYXQiOjE2NDY2NTY0NDksImV4cCI6MTY0NjY2MDA0OX0.KiHKtNnFDNZiWw1kyi9HHxJOL4sVEC0s-HaL8q4qzEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Summer 2019\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/albums",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/1 Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyM3dpa2lAZ21haWwuY29tIiwiaWQiOjEsIm5hbWUiOiJXaWt0b3JpYSBEb2JyemV3aW5za2EiLCJpYXQiOjE2NDY2NTcwODMsImV4cCI6MTY0NjY2MDY4M30.Q391yvtUQys82546hbmFwoIthPa0IC6d_flwD8lOlxY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/albums/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/8 Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2ODI3OTgxLCJleHAiOjE2NDY4MzE1ODF9.dMP8K9kDqL7yQAnu0I5XqP6I5Yf4ICzrHH0CONHN0Z8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/albums/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/7/photos Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2ODM0MTcyLCJleHAiOjE2NDY4Mzc3NzJ9.230He9N7Sc6ofsN8PUVhf3mLLU9sEDFAHeedxHHYLyo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"photo_id\": [40, 50, 60]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/albums/11/photos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums",
+								"11",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/7/photos/15 Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2ODM0MTcyLCJleHAiOjE2NDY4Mzc3NzJ9.230He9N7Sc6ofsN8PUVhf3mLLU9sEDFAHeedxHHYLyo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/albums/11/photos/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums",
+								"11",
+								"photos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/7 Nikola",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyM3dpa2lAZ21haWwuY29tIiwiaWQiOjEsIm5hbWUiOiJXaWt0b3JpYSBEb2JyemV3aW5za2EiLCJpYXQiOjE2NDY2NTcwODMsImV4cCI6MTY0NjY2MDY4M30.Q391yvtUQys82546hbmFwoIthPa0IC6d_flwD8lOlxY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/albums/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/7 Wiktoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyM3dpa2lAZ21haWwuY29tIiwiaWQiOjEsIm5hbWUiOiJXaWt0b3JpYSBEb2JyemV3aW5za2EiLCJpYXQiOjE2NDY2NTcyNzUsImV4cCI6MTY0NjY2MDg3NX0.CBvMB7NkCvyB0XNb57_QarjuQHsnoOf9g9KHwihGhZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/albums/15",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGFAZ21haWwuY29tIiwiaWQiOjIsIm5hbWUiOiJOaWtvbGEgRG9icnpld2luc2thIiwiaWF0IjoxNjQ2ODM1MDUzLCJleHAiOjE2NDY4Mzg2NTN9.-Aq9oQib2T1I35qGSzCzwqnBwP3bLEnqiJxZ8Lkk8HQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Some photos\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/albums/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
